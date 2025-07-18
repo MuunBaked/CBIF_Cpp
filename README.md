@@ -3,6 +3,11 @@
 
 ConsoleBasedInterfaceFramework / CBIF is a simple namespace that you can put in your C++ projects that's specifically made to provide a few functions for an easy display for text, alongside a textbox function, there are choice functions and other functions that may not be put in C++ by default, such as an average and a random between numbers function, you may add onto this however you'd like, apologies if its too basic and or not made well, this is my first attempt at making something with code.
 
+## How to Use:
+Download **CBIF_Frame.h**
+
+then put it in the folder with your main.cpp file.
+
 ## Functions
 
 ### CBIF_textbox();
