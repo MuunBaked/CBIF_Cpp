@@ -2,11 +2,13 @@
 #include <map>
 #include <cstdlib>
 #include <ctime>
+#include <string>
 //CBIF - Console Based: Interface Framework, A Story based with extra functions framework for console based interfaces.
 namespace cbif { 
     using namespace std;
     //Declaration
     inline map<string, string> memory;
+    inline map<string, int> memorynum;
 
     /*CBIF Definition Helper: CBIF_CLRSCRN()
     --
@@ -108,6 +110,36 @@ namespace cbif {
         cout<<'['<<numberspecified<<']';cout<<text<<"\n";
     }
 
+    //Memory Function - No Definition
+    inline void CBIF_memupdate(string index, string value){
+        if (value != ""){memory[index] = value;}else cerr<<"\nCBIF:!*:Empty String Input";
+    }
+
+    //Memory Function - No Definition
+    inline string CBIF_memread(string index){
+        return memory.count(index) ? memory[index] : "\nERROR";
+    }
+
+    //Memory Function - No Definition
+    inline void CBIF_memclear(string index){
+        if (memory.count(index)){memory.erase(index);}else cerr<< "\nCBIF:!*:No Memory Input";
+    }
+
+    //Memory Function - No Definition
+    inline void CBIF_INTmemupdate(string index, int value){
+        if (value != -999923239929){memorynum[index] = value;}else cerr<<"\nCBIF:!*:Empty Int Input";
+    }
+
+    //Memory Function - No Definition
+    inline int CBIF_INTmemread(string index){
+        return memorynum.count(index) ? memorynum[index] : -9999232323999;
+    }
+
+    //Memory Function - No Definition
+    inline void CBIF_INTmemclear(string index){
+        if (memorynum.count(index)){memorynum.erase(index);}else cerr<< "\nCBIF:!*:No Memory Input";
+    }
+
     /*CBIF Definition Helper
     --
     too lazy to type this.. just ask me ill know... :c
@@ -154,5 +186,17 @@ namespace cbif {
         cout << "\n" << text << "\n(Press Enter to continue...)";
         cin.ignore();
         cin.get();
+    }
+
+    // USE ONLY ONCE TO TEST.
+    void CBIF_Initialize(){
+        string text = "a"; int num = 8; int b; int e[]={2,3,4}; int r;
+        CBIF_textbox(text,text);
+        CBIF_showchoice(1,"a");
+        CBIF_CLRSCRN();
+        CBIF_choice(-9999992323999,num,"a","a");
+        CBIF_Ext_average(e,3,b); 
+        CBIF_Ext_randomchoice(r,4,1);
+        cout<<"INITIALIZED"; CBIF_CLRSCRN();
     }
 }
