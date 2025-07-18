@@ -91,8 +91,8 @@ namespace cbif {
     */
     inline void CBIF_getinput(int& point, int min, int max){
         cout<<"\n[!]";cout<<" INPUT:"; int inp; cin>>point;
-        if (point == 404){exit(0);} if (point > max || point < min)
-        {cout<<"\n"<<"INVALID POINT; USE NUMS BTWN:"<<min<<'&'<<max;cin.clear();CBIF_getinput(point,min,max);}
+        if (point == 404404){exit(0);} if (point > max || point < min)
+        {cout<<"\n"<<"INVALID POINT; USE NUMS BTWN:"<<min<<'-'<<max;cin.clear();CBIF_getinput(point,min,max);}
     }
 
     /*CBIF Definition Helper
@@ -127,7 +127,7 @@ namespace cbif {
     averages out an array, input is predefined, the size is the size of the array, also predefined
     totald is the total, predefined too
     */
-    void CBIF_Ext_Average(int array[], int size, int& totald){
+    void CBIF_Ext_average(int array[], int size, int& totald){
         int total = 0;
         for (int i = 0; i<size; i++){total+=array[i];}
         totald = total/size;
