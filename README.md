@@ -139,3 +139,8 @@ CBIF_NAMovement(' ');
  
 (Press Enter to continue...) //input enter
 ```
+
+
+## Memory Functions
+
+No Definition, remind Muun to input them.
