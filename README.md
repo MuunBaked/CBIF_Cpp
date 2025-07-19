@@ -143,4 +143,4 @@ CBIF_NAMovement(' ');
 
 ## Memory Functions
 
-all memory functions are strings, the value, and the index are strings, unless you're using the int version, which in that case both value and index are both integers.
+all memory functions are strings, the value, and the index are strings, unless you're using the int version, which in that case the value is an integer and the index is a string.
