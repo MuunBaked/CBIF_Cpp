@@ -110,32 +110,32 @@ namespace cbif {
         cout<<'['<<numberspecified<<']';cout<<text<<"\n";
     }
 
-    //Memory Function - No Definition
+    //Memory Function - STRING memory update, input 1: index, input 2: value (both string)
     inline void CBIF_memupdate(string index, string value){
         if (value != ""){memory[index] = value;}else cerr<<"\nCBIF:!*:Empty String Input";
     }
 
-    //Memory Function - No Definition
+    //Memory Function - STRING memory read, input 1: index (string)
     inline string CBIF_memread(string index){
         return memory.count(index) ? memory[index] : "\nERROR";
     }
 
-    //Memory Function - No Definition
+    //Memory Function - STRING memory clear, index 1: index (string)
     inline void CBIF_memclear(string index){
         if (memory.count(index)){memory.erase(index);}else cerr<< "\nCBIF:!*:No Memory Input";
     }
 
-    //Memory Function - No Definition
+    //Memory Function - INT memory update, input 1: index, input 2: value (both int)
     inline void CBIF_INTmemupdate(string index, int value){
-        if (value != -999923239929){memorynum[index] = value;}else cerr<<"\nCBIF:!*:Empty Int Input";
+        if (value != -9239239){memorynum[index] = value;}else cerr<<"\nCBIF:!*:Empty Int Input";
     }
 
-    //Memory Function - No Definition
+    //Memory Function - INT memory read, input 1: index (int)
     inline int CBIF_INTmemread(string index){
-        return memorynum.count(index) ? memorynum[index] : -9999232323999;
+        return memorynum.count(index) ? memorynum[index] : -9239239;
     }
 
-    //Memory Function - No Definition
+    //Memory Function - INT memory clear, index 1: index (int)
     inline void CBIF_INTmemclear(string index){
         if (memorynum.count(index)){memorynum.erase(index);}else cerr<< "\nCBIF:!*:No Memory Input";
     }
@@ -194,7 +194,6 @@ namespace cbif {
         CBIF_textbox(text,text);
         CBIF_showchoice(1,"a");
         CBIF_CLRSCRN();
-        CBIF_choice(-9999992323999,num,"a","a");
         CBIF_Ext_average(e,3,b); 
         CBIF_Ext_randomchoice(r,4,1);
         cout<<"INITIALIZED"; CBIF_CLRSCRN();
