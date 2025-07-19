@@ -8,6 +8,10 @@ Download **CBIF_Frame.h**
 
 then put it in the folder with your main.cpp file.
 
+then write #include "CBIF_Frame.h" in the main cpp file
+
+then write using namespace cbif; (you can also use another namespace alongside tihis!)
+
 ## Functions
 
 ### CBIF_textbox();
