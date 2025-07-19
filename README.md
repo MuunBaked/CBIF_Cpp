@@ -143,4 +143,4 @@ CBIF_NAMovement(' ');
 
 ## Memory Functions
 
-No Definition, remind Muun to input them.
+all memory functions are strings, the value, and the index are strings, unless you're using the int version, which in that case both value and index are both integers.
